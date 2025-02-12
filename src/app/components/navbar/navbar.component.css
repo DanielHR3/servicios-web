@@ -1,0 +1,28 @@
+/* 🔹 Fondo con transparencia */
+nav {
+  backdrop-filter: blur(10px);
+}
+
+/* 🔹 Estilo de enlaces sin subrayado */
+nav a {
+  text-decoration: none;
+}
+
+/* 🔹 Mejora del botón menú en móviles */
+button {
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+/* 🔹 Ajuste en la transición del menú */
+ul {
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+/* Aumenta ligeramente el tamaño en hover */
+nav a:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}

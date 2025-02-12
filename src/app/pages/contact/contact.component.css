@@ -1,0 +1,28 @@
+html, body {
+    overflow-x: hidden;
+    background-color: #111827;
+  }
+  
+  /* 🔹 Estilo mejorado del formulario */
+  input, textarea {
+    font-size: 1.2rem;
+  }
+  
+  button {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* 🔹 Ajuste para evitar que el formulario choque con la navbar */
+  .pt-32 {
+    padding-top: 8rem; /* Incrementado el padding-top para mayor espacio */
+  }
+  

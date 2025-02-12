@@ -1,0 +1,19 @@
+/* 🔹 Asegura que el footer no se vea pegado al contenido */
+footer {
+  margin-top: 4rem;
+}
+
+/* 🔹 Suaviza la sombra del texto */
+footer a {
+  text-decoration: none;
+}
+
+/* 🔹 Agrega un efecto de escala en hover a los íconos de redes sociales */
+footer fa-icon {
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Agrega un resplandor en hover a los iconos de redes sociales */
+footer fa-icon:hover {
+  filter: drop-shadow(0px 0px 10px rgba(59, 130, 246, 0.5)); /* Azul */
+}

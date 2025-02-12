@@ -1,0 +1,30 @@
+<div class="min-h-screen flex items-center justify-center bg-gray-900 text-white pt-32">
+  <div class="bg-gray-800 shadow-lg rounded-lg p-8 w-full max-w-lg">
+    <h2 class="text-4xl font-extrabold text-center text-blue-400">📩 Contáctanos</h2>
+
+    <form class="mt-6 space-y-6">
+      <div>
+        <label class="block text-gray-300">Nombre</label>
+        <input id="name" type="text" 
+               class="w-full p-3 border border-gray-600 rounded-lg bg-gray-700 text-white focus:ring-2 focus:ring-blue-400">
+      </div>
+
+      <div>
+        <label class="block text-gray-300">Correo Electrónico</label>
+        <input id="email" type="email" 
+               class="w-full p-3 border border-gray-600 rounded-lg bg-gray-700 text-white focus:ring-2 focus:ring-blue-400">
+      </div>
+
+      <div>
+        <label class="block text-gray-300">Mensaje</label>
+        <textarea id="message" rows="5" 
+                  class="w-full p-3 border border-gray-600 rounded-lg bg-gray-700 text-white focus:ring-2 focus:ring-blue-400"></textarea>
+      </div>
+
+      <button type="button" (click)="sendMessage()" 
+        class="relative inline-block px-8 py-4 text-2xl font-bold text-white bg-gradient-to-r from-blue-500 to-teal-400 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring-4 focus:ring-green-300 w-full">
+  📩 Enviar Mensaje por WhatsApp
+</button>
+    </form>
+  </div>
+</div>

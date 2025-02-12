@@ -1,0 +1,49 @@
+<nav class="bg-gray-900/90 backdrop-blur-md shadow-lg fixed w-full top-0 left-0 z-50">
+  <div class="container mx-auto flex justify-between items-center px-6 py-6">
+    
+    <!-- LOGO MEJORADO -->
+    <a routerLink="/" 
+       class="text-blue-400 text-6xl font-extrabold tracking-wide shadow-lg drop-shadow-md transition duration-300 hover:text-blue-300">
+      Software Crafters
+    </a>
+
+    <!-- BOTÓN MENÚ RESPONSIVO -->
+    <button (click)="toggleMenu()" 
+            class="lg:hidden text-blue-400 text-5xl font-bold focus:outline-none transition-transform duration-300 hover:scale-110">
+      ☰
+    </button>
+
+<!-- MENÚ DE NAVEGACIÓN -->
+<ul [ngClass]="{
+  'hidden': !menuOpen, 
+  'flex': menuOpen, 
+  'flex-col': true, 
+  'lg:flex': true, 
+  'lg:flex-row': true
+}"
+  class="lg:flex lg:items-center lg:space-x-12 relative lg:static top-20 left-0 w-full lg:w-auto bg-gray-900/95 shadow-lg lg:shadow-none p-6 transition-all duration-300 ease-in-out"
+  [ngStyle]="{'transform': menuOpen ? 'translateY(0)' : 'translateY(-10px)'}">
+
+<li>
+  <a routerLink="/servicios" 
+     class="text-blue-300 text-3xl font-bold px-6 py-3 rounded-lg transition duration-300 hover:text-blue-300 hover:bg-gray-700 shadow-md">
+    Servicios
+  </a>
+</li>
+<li>
+  <a routerLink="/nosotros" 
+     class="text-blue-300 text-3xl font-bold px-6 py-3 rounded-lg transition duration-300 hover:text-blue-300 hover:bg-gray-700 shadow-md">
+    Nosotros
+  </a>
+</li>
+<li>
+  <a routerLink="/contacto" 
+     class="text-blue-300 text-3xl font-bold px-6 py-3 rounded-lg transition duration-300 hover:text-blue-300 hover:bg-gray-700 shadow-md">
+    Contacto
+  </a>
+</li>
+</ul>
+
+
+  </div>
+</nav>

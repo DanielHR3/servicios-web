@@ -1,0 +1,36 @@
+/* 🔹 Ajuste para que la navbar no tape el contenido */
+html, body {
+  overflow-x: hidden;
+  background-color: #111827;
+  padding-top: 80px;
+}
+
+/* 🔹 Más separación del navbar */
+.pt-40 {
+  padding-top: 10rem;
+}
+
+/* 🔹 Más separación entre contenido y footer */
+.pb-32 {
+  padding-bottom: 8rem;
+}
+
+/* 🔹 Sección de tecnologías aún más abajo */
+.mt-48 {
+  margin-top: 12rem;
+}
+
+/* 🔹 Sombra en textos para mejorar la visibilidad */
+h1, h2, h3, p {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* 🔹 Espaciado en los contenedores */
+.container {
+  margin-top: 5rem;
+}
+
+/* 🔹 Transiciones suaves */
+.transition {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}

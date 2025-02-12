@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+/* Debe estar en la PRIMERA línea del archivo */
+@charset "UTF-8";
+
+/* Importar Tailwind */
+@import "tailwindcss";
+
+/* Importar Bootstrap después de Tailwind */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+.button-gradient {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(to right, #3b82f6, #14b8a6);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .button-gradient:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .button-gradient:focus {
+    outline: none;
+    ring-width: 4px;
+    ring-color: #3b82f6;
+  }
+  
